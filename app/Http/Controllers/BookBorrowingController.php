@@ -100,7 +100,6 @@ class BookBorrowingController extends Controller
             $content->from  = $bookBorrowing->from;
             $content->to    = $bookBorrowing->to;
             Mail::to($bookBorrowing->user->email, $bookBorrowing->user->name)->send(new SendNotification($content));
-            //Mail::to('paulosergiophp@gmail.com', $bookBorrowing->user->name)->queue(new SendNotification($content));
 
             return response()->json([
                 'success' => true,
