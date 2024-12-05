@@ -62,3 +62,7 @@ Para rodar a fila de envio dos e-mails, execute:
 ```bash
 sail artisan queue:work`
 ```
+## Documentação
+A documentação pode ser acessada em:
+
+http://localhost:88/api/documentation#/
