@@ -47,10 +47,6 @@ sail artisan migrate
 ```bash
 sail artisan db:seed
 ```
-
-## Envio de emails
-Para que o envio de emil seja realizados, é necessário configurar dados SMTP no arquivo .env
-
 ## Autenticar
 ```bash
 {
@@ -58,6 +54,10 @@ Para que o envio de emil seja realizados, é necessário configurar dados SMTP n
     "password" : "password"
 }
 ```
+
+## Envio de emails
+Para que o envio de emil seja realizados, é necessário configurar dados SMTP no arquivo .env
+
 Para rodar a fila de envio dos e-mails, execute:
 ```bash
 sail artisan queue:work`
